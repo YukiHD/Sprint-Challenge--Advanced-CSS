@@ -213,10 +213,26 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .intro img {
+  max-width: 100%;
+  height: 100%;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
