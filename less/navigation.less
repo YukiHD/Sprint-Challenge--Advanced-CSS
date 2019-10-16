@@ -13,12 +13,22 @@ nav {
     max-width: 800px;
     font-size: 3rem;
     padding: 15px 0;
+
+    img {
+      max-width: 800px;
+      height: 100%;
+    }
   }
 
   .nav-bar {
-    width: 40%;
+    width: 55%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: nowrap;
+
+    @media @phone {
+      width: 100%;
+    }
 
     a {
       text-decoration: none;
