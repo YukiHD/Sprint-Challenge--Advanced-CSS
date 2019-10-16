@@ -1,1 +1,39 @@
 // Navigation code here
+
+nav {
+  .flex-layout(center, center);
+  .width-layout(100%, 0 auto);
+  flex-direction: column;
+  padding: 20px;
+  background: #f4f4f4;
+  padding: 10px 0;
+  border: 1px double #e0e0e0;
+
+  .nav-logo {
+    max-width: 800px;
+    font-size: 3rem;
+    padding: 15px 0;
+
+    img {
+      max-width: 800px;
+      height: 100%;
+    }
+  }
+
+  .nav-bar {
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+
+    @media @phone {
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.4rem;
+    }
+  }
+}
